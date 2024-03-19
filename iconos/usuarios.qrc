@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="usuarios">
+    <file>editar (2).png</file>
+    <file>anadir.png</file>
+    <file>gota-de-agua.png</file>
+    <file>menos.png</file>
+    <file>grupo-de-usuarios.png</file>
+    <file>cerrar-sesion.png</file>
+    <file>casa.png</file>
+    <file>editar.png</file>
+    <file>quitar-usuario.png</file>
+    <file>agregar-usuario (1).png</file>
+  </qresource>
+</RCC>

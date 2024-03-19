@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="gastos">
+    <file>anadir.png</file>
+    <file>computadora.png</file>
+    <file>yon (3).png</file>
+    <file>yon (4).png</file>
+    <file>yon (7).png</file>
+  </qresource>
+</RCC>

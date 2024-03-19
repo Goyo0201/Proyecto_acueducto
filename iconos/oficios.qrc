@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="oficios">
+    <file>agua.png</file>
+    <file>casa.png</file>
+    <file>anadir.png</file>
+    <file>oficios.png</file>
+    <file>computadora.png</file>
+    <file>impresora.png</file>
+    <file>agregar (2).png</file>
+    <file>gota-de-agua.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,2816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>interfaz_recibos</class>
+ <widget class="QMainWindow" name="interfaz_recibos">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1606</width>
+    <height>1046</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>866</width>
+    <height>1046</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>1046</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(40, 44, 52);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QFrame" name="frame_total">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 37, 43);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_superior">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(33, 37, 43);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>29</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>     Software de control de puntos de agua - Recibos</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>675</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_minimizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/cil-window-minimize.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_restaurar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/icon_restore.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_maximizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/icon_maximize.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_cerrar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/cil-x.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_menu_principal">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 44, 52);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_izquierda">
+            <property name="minimumSize">
+             <size>
+              <width>240</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>240</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(33, 37, 43);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_17">
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="minimumSize">
+                <size>
+                 <width>220</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>150</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="baseSize">
+                <size>
+                 <width>150</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">image: url(:/recibos/factura.png);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>    Menú recibos</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QPushButton" name="bt_crear_recibo">
+                 <property name="minimumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> Crear</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../iconos/recibos.qrc">
+                   <normaloff>:/recibos/agregar.png</normaloff>:/recibos/agregar.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_paginas">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_31">
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="pagina_bienvenida">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <spacer name="horizontalSpacer_7">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>217</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);
+font: 32pt &quot;Segoe UI&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Bienvenido(a) a la interfaz de recibos</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_23">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pagina_recibos">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QFrame" name="frame_recibo">
+                   <property name="minimumSize">
+                    <size>
+                     <width>650</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>650</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QWidget" name="layoutWidget">
+                    <property name="geometry">
+                     <rect>
+                      <x>40</x>
+                      <y>50</y>
+                      <width>563</width>
+                      <height>724</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_16">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_15">
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_14">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_13">
+                           <item>
+                            <layout class="QVBoxLayout" name="verticalLayout_11">
+                             <item>
+                              <layout class="QVBoxLayout" name="verticalLayout_5">
+                               <item>
+                                <widget class="QLabel" name="label_18">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>15</pointsize>
+                                   <weight>50</weight>
+                                   <italic>false</italic>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(0, 0, 0);
+font: 15pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+
+</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>COMERCIACOOP</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_19">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <italic>false</italic>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Asociación de Suscriptores Acueducto</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_20">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <italic>false</italic>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>&quot;EL HOGAR&quot;</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_21">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <italic>false</italic>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+background-color: rgb(218, 218, 218);
+</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Vereda Tierrra de Páez - Chiquinquirá - Boyacá</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_22">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>550</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>10</pointsize>
+                                   <weight>50</weight>
+                                   <italic>false</italic>
+                                   <bold>false</bold>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Cuenta No. 900164759 - 01</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_16">
+                               <property name="bottomMargin">
+                                <number>7</number>
+                               </property>
+                               <item>
+                                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                                 <item>
+                                  <widget class="QLabel" name="label_14">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>25</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>25</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>10</pointsize>
+                                     <weight>50</weight>
+                                     <italic>false</italic>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>No. </string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="QLineEdit" name="txt_num_recibo">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>25</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>25</height>
+                                    </size>
+                                   </property>
+                                   <property name="sizeIncrement">
+                                    <size>
+                                     <width>70</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+                                   </property>
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                               <item>
+                                <spacer name="horizontalSpacer_4">
+                                 <property name="orientation">
+                                  <enum>Qt::Horizontal</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>40</width>
+                                   <height>20</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                               <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_7">
+                                 <property name="spacing">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="label_29">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>182</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>182</width>
+                                     <height>16777215</height>
+                                    </size>
+                                   </property>
+                                   <property name="font">
+                                    <font>
+                                     <family>Arial</family>
+                                     <pointsize>12</pointsize>
+                                     <weight>50</weight>
+                                     <italic>false</italic>
+                                     <bold>false</bold>
+                                    </font>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #ffffff;  /* Ancho y color del borde */
+
+</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>PAGAR ANTES DEL</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                                   <property name="spacing">
+                                    <number>0</number>
+                                   </property>
+                                   <item>
+                                    <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                     <property name="spacing">
+                                      <number>0</number>
+                                     </property>
+                                     <item>
+                                      <widget class="QLabel" name="label_30">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>60</width>
+                                         <height>0</height>
+                                        </size>
+                                       </property>
+                                       <property name="maximumSize">
+                                        <size>
+                                         <width>60</width>
+                                         <height>16777215</height>
+                                        </size>
+                                       </property>
+                                       <property name="font">
+                                        <font>
+                                         <family>Arial</family>
+                                         <pointsize>12</pointsize>
+                                         <weight>50</weight>
+                                         <italic>false</italic>
+                                         <bold>false</bold>
+                                        </font>
+                                       </property>
+                                       <property name="styleSheet">
+                                        <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                                       </property>
+                                       <property name="text">
+                                        <string>AÑO</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QLabel" name="label_31">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>60</width>
+                                         <height>0</height>
+                                        </size>
+                                       </property>
+                                       <property name="maximumSize">
+                                        <size>
+                                         <width>60</width>
+                                         <height>16777215</height>
+                                        </size>
+                                       </property>
+                                       <property name="font">
+                                        <font>
+                                         <family>Arial</family>
+                                         <pointsize>12</pointsize>
+                                         <weight>50</weight>
+                                         <italic>false</italic>
+                                         <bold>false</bold>
+                                        </font>
+                                       </property>
+                                       <property name="styleSheet">
+                                        <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                                       </property>
+                                       <property name="text">
+                                        <string>MES</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QLabel" name="label_32">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>60</width>
+                                         <height>0</height>
+                                        </size>
+                                       </property>
+                                       <property name="maximumSize">
+                                        <size>
+                                         <width>60</width>
+                                         <height>16777215</height>
+                                        </size>
+                                       </property>
+                                       <property name="font">
+                                        <font>
+                                         <family>Arial</family>
+                                         <pointsize>12</pointsize>
+                                         <weight>50</weight>
+                                         <italic>false</italic>
+                                         <bold>false</bold>
+                                        </font>
+                                       </property>
+                                       <property name="styleSheet">
+                                        <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                                       </property>
+                                       <property name="text">
+                                        <string>DÍA</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                    </layout>
+                                   </item>
+                                   <item>
+                                    <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                     <property name="spacing">
+                                      <number>0</number>
+                                     </property>
+                                     <item>
+                                      <widget class="QLineEdit" name="txt_fecha_recibo">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>180</width>
+                                         <height>25</height>
+                                        </size>
+                                       </property>
+                                       <property name="maximumSize">
+                                        <size>
+                                         <width>180</width>
+                                         <height>25</height>
+                                        </size>
+                                       </property>
+                                       <property name="sizeIncrement">
+                                        <size>
+                                         <width>70</width>
+                                         <height>0</height>
+                                        </size>
+                                       </property>
+                                       <property name="styleSheet">
+                                        <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                                       </property>
+                                       <property name="text">
+                                        <string/>
+                                       </property>
+                                       <property name="placeholderText">
+                                        <string>   AAAA-MM-DD</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                    </layout>
+                                   </item>
+                                  </layout>
+                                 </item>
+                                </layout>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_17">
+                             <item>
+                              <widget class="QLabel" name="label_15">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>70</width>
+                                 <height>0</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>70</width>
+                                 <height>16777215</height>
+                                </size>
+                               </property>
+                               <property name="font">
+                                <font>
+                                 <family>Arial</family>
+                                 <pointsize>10</pointsize>
+                                 <weight>50</weight>
+                                 <italic>false</italic>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                               </property>
+                               <property name="text">
+                                <string>Nombre:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="txt_nombre_recibo">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>477</width>
+                                 <height>25</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>775</width>
+                                 <height>25</height>
+                                </size>
+                               </property>
+                               <property name="sizeIncrement">
+                                <size>
+                                 <width>70</width>
+                                 <height>0</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+
+</string>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_9">
+                           <property name="spacing">
+                            <number>12</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>10</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_16">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Servicio:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_17">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>01-02-03.</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="check_01">
+                             <property name="minimumSize">
+                              <size>
+                               <width>20</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>20</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_24">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>04-05-06</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="check_04">
+                             <property name="minimumSize">
+                              <size>
+                               <width>20</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>20</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_23">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>07-08-09</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="check_07">
+                             <property name="minimumSize">
+                              <size>
+                               <width>20</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>20</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_25">
+                             <property name="minimumSize">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>10-11-12.</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="check_10">
+                             <property name="minimumSize">
+                              <size>
+                               <width>20</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>20</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_18">
+                         <property name="rightMargin">
+                          <number>2</number>
+                         </property>
+                         <item>
+                          <spacer name="horizontalSpacer_5">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_8">
+                           <property name="spacing">
+                            <number>20</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_26">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>50</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>MT^3</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_metros_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_27">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>50</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>L. ANT</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_lectura_ant_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_28">
+                             <property name="minimumSize">
+                              <size>
+                               <width>50</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>50</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>10</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+</string>
+                             </property>
+                             <property name="text">
+                              <string>L. ACT</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_lectura_act_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>70</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_12">
+                       <property name="topMargin">
+                        <number>15</number>
+                       </property>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_12">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_8">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_33">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string>SERVICIO              $</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_34">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string>INAS ASAMBLEA    $</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_35">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string>CONTRIBUCIÓN      $</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_36">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string>OTROS                  $</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_37">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_38">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_39">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_40">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_41">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>200</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Arial</family>
+                               <pointsize>12</pointsize>
+                               <weight>9</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Arial&quot;;
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 1px solid #000000;  /* Ancho y color del borde */
+background-color: rgb(218, 218, 218);
+</string>
+                             </property>
+                             <property name="text">
+                              <string>TOTAL A PAGAR     $</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_9">
+                           <property name="spacing">
+                            <number>1</number>
+                           </property>
+                           <item>
+                            <widget class="QLineEdit" name="txt_costo_servicio_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */
+
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_inas_asamblea_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_contribucion_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_otros_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_cedula_agregar_12">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_cedula_agregar_14">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_cedula_agregar_15">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_cedula_agregar_16">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>27</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #FFFFFF;  /* Ancho y color del borde */
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="txt_total_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>350</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>70</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Arial&quot;;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_4">
+                         <property name="minimumSize">
+                          <size>
+                           <width>555</width>
+                           <height>90</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>555</width>
+                           <height>90</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">border: 1px solid #000000;  /* Ancho y color del borde */</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_10">
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_14">
+                            <item>
+                             <widget class="QLabel" name="label">
+                              <property name="styleSheet">
+                               <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+border: 1px solid #ffffff;  /* Ancho y color del borde */
+</string>
+                              </property>
+                              <property name="text">
+                               <string>FIRMA TESORERO</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_2">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_13">
+                            <item>
+                             <spacer name="horizontalSpacer_3">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_2">
+                              <property name="styleSheet">
+                               <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Arial&quot;;
+border: 1px solid #ffffff;  /* Ancho y color del borde */</string>
+                              </property>
+                              <property name="text">
+                               <string>CEL. FONTANERO 3138680686 </string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QLabel" name="label_4">
+                    <property name="geometry">
+                     <rect>
+                      <x>20</x>
+                      <y>20</y>
+                      <width>600</width>
+                      <height>791</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>600</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="sizeIncrement">
+                     <size>
+                      <width>0</width>
+                      <height>800</height>
+                     </size>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>0</width>
+                      <height>800</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+qproperty-alignment: 'AlignCenter';  /* Asegura que el texto esté centrado */
+border: 2px solid #000000;  /* Ancho y color del borde */
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>.</string>
+                    </property>
+                   </widget>
+                   <zorder>label_4</zorder>
+                   <zorder>layoutWidget</zorder>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_2">
+                   <property name="maximumSize">
+                    <size>
+                     <width>700</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="sizeIncrement">
+                    <size>
+                     <width>700</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_22">
+                    <item>
+                     <widget class="QFrame" name="frame_botones">
+                      <property name="minimumSize">
+                       <size>
+                        <width>560</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>560</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_23">
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_19">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_4">
+                           <item>
+                            <layout class="QVBoxLayout" name="verticalLayout_18">
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_19">
+                               <item>
+                                <widget class="QLabel" name="label_42">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>220</width>
+                                   <height>70</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>220</width>
+                                   <height>70</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">
+font: 75 26pt &quot;Segoe UI&quot;;
+
+color: #0074c3;
+
+</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Crear recibo</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <spacer name="horizontalSpacer_9">
+                                 <property name="orientation">
+                                  <enum>Qt::Horizontal</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>40</width>
+                                   <height>20</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                              </layout>
+                             </item>
+                             <item>
+                              <layout class="QHBoxLayout" name="horizontalLayout_20">
+                               <item>
+                                <widget class="QLabel" name="label_43">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>220</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>220</width>
+                                   <height>16777215</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">font: 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Listado de usuarios:</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <spacer name="horizontalSpacer_8">
+                                 <property name="orientation">
+                                  <enum>Qt::Horizontal</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>40</width>
+                                   <height>20</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                              </layout>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_21">
+                             <item>
+                              <widget class="QComboBox" name="combo_usuario_recibo">
+                               <property name="enabled">
+                                <bool>true</bool>
+                               </property>
+                               <property name="minimumSize">
+                                <size>
+                                 <width>450</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>450</width>
+                                 <height>16777215</height>
+                                </size>
+                               </property>
+                               <property name="sizeIncrement">
+                                <size>
+                                 <width>0</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+                               </property>
+                               <property name="editable">
+                                <bool>false</bool>
+                               </property>
+                               <property name="currentIndex">
+                                <number>-1</number>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="bt_buscar_recibo">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>50</width>
+                                 <height>50</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>50</width>
+                                 <height>50</height>
+                                </size>
+                               </property>
+                               <property name="font">
+                                <font>
+                                 <family>Segoe UI</family>
+                                 <pointsize>14</pointsize>
+                                 <weight>50</weight>
+                                 <italic>false</italic>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="cursor">
+                                <cursorShape>PointingHandCursor</cursorShape>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                               <property name="icon">
+                                <iconset resource="../iconos/recibos.qrc">
+                                 <normaloff>:/recibos/agregar (2).png</normaloff>:/recibos/agregar (2).png</iconset>
+                               </property>
+                               <property name="iconSize">
+                                <size>
+                                 <width>45</width>
+                                 <height>45</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <spacer name="verticalSpacer_2">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_4">
+                           <item>
+                            <widget class="QPushButton" name="bt_imprimir_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>220</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>220</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Segoe UI</family>
+                               <pointsize>14</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="cursor">
+                              <cursorShape>PointingHandCursor</cursorShape>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Imprimir</string>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="../iconos/recibos.qrc">
+                               <normaloff>:/recibos/impresora.png</normaloff>:/recibos/impresora.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>45</width>
+                               <height>45</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="horizontalSpacer_6">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="bt_guardar_recibo">
+                             <property name="minimumSize">
+                              <size>
+                               <width>220</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>220</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Segoe UI</family>
+                               <pointsize>14</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="cursor">
+                              <cursorShape>PointingHandCursor</cursorShape>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Guardar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="../iconos/recibos.qrc">
+                               <normaloff>:/recibos/computadora.png</normaloff>:/recibos/computadora.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>45</width>
+                               <height>45</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_inferior">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QPushButton" name="bt_regresar">
+            <property name="minimumSize">
+             <size>
+              <width>220</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>220</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton {
+     /* Color de fondo */
+    color: rgb(255, 255, 255);
+    
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0074c3;
+}</string>
+            </property>
+            <property name="text">
+             <string> Regresar</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../iconos/usuarios.qrc">
+              <normaloff>:/usuarios/casa.png</normaloff>:/usuarios/casa.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>645</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="creditsLabel">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>19</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>© 2023 Sebastián Montoya - John Goyeneche - Fabián Romero / Unisangil </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../iconos/menu_principal.qrc"/>
+  <include location="../iconos/recibos.qrc"/>
+  <include location="../iconos/usuarios.qrc"/>
+ </resources>
+ <connections/>
+</ui>

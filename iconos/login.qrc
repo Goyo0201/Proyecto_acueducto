@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="login">
+    <file>ojo2.png</file>
+    <file>ojo.png</file>
+    <file>cerrar-con-llave.png</file>
+    <file>usuario (2).png</file>
+  </qresource>
+</RCC>

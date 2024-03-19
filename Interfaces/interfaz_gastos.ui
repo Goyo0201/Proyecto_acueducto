@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>interfaz_gastos</class>
+ <widget class="QMainWindow" name="interfaz_gastos">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1526</width>
+    <height>1046</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>866</width>
+    <height>1046</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>1046</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(40, 44, 52);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QFrame" name="frame_total">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 37, 43);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_superior">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(33, 37, 43);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>29</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>     Software de control de puntos de agua - Gastos</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>675</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_minimizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/cil-window-minimize.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_restaurar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/icon_restore.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_maximizar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/icon_maximize.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_cerrar">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/menu_principal/cil-x.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_menu_principal">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 44, 52);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_izquierda">
+            <property name="minimumSize">
+             <size>
+              <width>240</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>240</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(33, 37, 43);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QFrame" name="frame">
+                 <property name="minimumSize">
+                  <size>
+                   <width>220</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="sizeIncrement">
+                  <size>
+                   <width>150</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="baseSize">
+                  <size>
+                   <width>150</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">image: url(:/gastos/yon (7).png);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>16</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>    Menú gastos</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="bt_crear_gasto">
+                 <property name="minimumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Crear gasto</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../iconos/gastos.qrc">
+                   <normaloff>:/gastos/anadir.png</normaloff>:/gastos/anadir.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="bt_editar_gasto">
+                 <property name="minimumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                 </property>
+                 <property name="text">
+                  <string> Editar gasto</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../iconos/gastos.qrc">
+                   <normaloff>:/gastos/yon (3).png</normaloff>:/gastos/yon (3).png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="bt_eliminar_gasto">
+                 <property name="minimumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>220</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Eliminar gasto</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../iconos/gastos.qrc">
+                   <normaloff>:/gastos/yon (4).png</normaloff>:/gastos/yon (4).png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>45</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_paginas">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_31">
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="pagina_bienvenida">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <spacer name="horizontalSpacer_7">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>217</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);
+font: 32pt &quot;Segoe UI&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Bienvenido(a) a la interfaz de gastos</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_23">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pagina_gastos">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QFrame" name="frame_2">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_20">
+                    <item>
+                     <widget class="QFrame" name="frame_3">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>78</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QWidget" name="layoutWidget">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>0</y>
+                         <width>498</width>
+                         <height>69</height>
+                        </rect>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_17">
+                        <item>
+                         <widget class="QLabel" name="label_39">
+                          <property name="minimumSize">
+                           <size>
+                            <width>450</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>450</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">
+font: 75 30pt &quot;Segoe UI&quot;;
+
+color: #0074c3;
+</string>
+                          </property>
+                          <property name="text">
+                           <string>Ingresar nuevo gasto</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_5">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_19">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_19">
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_8">
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_18">
+                            <item>
+                             <widget class="QLabel" name="label_34">
+                              <property name="minimumSize">
+                               <size>
+                                <width>130</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>130</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">
+font: 75 26pt &quot;Segoe UI&quot;;
+
+color: #0074c3;
+
+</string>
+                              </property>
+                              <property name="text">
+                               <string>Gasto</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <spacer name="horizontalSpacer_8">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_14">
+                            <property name="spacing">
+                             <number>6</number>
+                            </property>
+                            <item>
+                             <layout class="QVBoxLayout" name="verticalLayout_4">
+                              <property name="spacing">
+                               <number>65</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>30</number>
+                              </property>
+                              <item>
+                               <widget class="QLabel" name="label_2">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>220</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">font: 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Fecha:</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLabel" name="label_3">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>150</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">font: 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Monto:</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLabel" name="label_4">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>150</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">font: 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                 <string>Descripción:</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <spacer name="verticalSpacer_7">
+                                <property name="orientation">
+                                 <enum>Qt::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                 <size>
+                                  <width>20</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </spacer>
+                              </item>
+                             </layout>
+                            </item>
+                            <item>
+                             <layout class="QVBoxLayout" name="verticalLayout_5">
+                              <property name="spacing">
+                               <number>60</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>30</number>
+                              </property>
+                              <item>
+                               <widget class="QLineEdit" name="txt_agregar_feccha">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>500</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>500</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="sizeIncrement">
+                                 <size>
+                                  <width>400</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">color: rgb(0, 0, 0);
+font: 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="placeholderText">
+                                 <string>AAAA-MM-DD</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QLineEdit" name="txt_agregar_monto">
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>500</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="sizeIncrement">
+                                 <size>
+                                  <width>500</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">color: rgb(0, 0, 0);
+font: 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                                <property name="placeholderText">
+                                 <string>sin puntos</string>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QTextEdit" name="txt_agregar_descripcion">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>500</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>500</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">color: rgb(0, 0, 0);
+font: 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_18">
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_7">
+                            <item>
+                             <layout class="QHBoxLayout" name="horizontalLayout_16">
+                              <item>
+                               <widget class="QLabel" name="label_35">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>390</width>
+                                  <height>0</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>390</width>
+                                  <height>16777215</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">
+font: 75 26pt &quot;Segoe UI&quot;;
+
+color: #0074c3;
+
+</string>
+                                </property>
+                                <property name="text">
+                                 <string>Número de contador</string>
+                                </property>
+                                <property name="alignment">
+                                 <set>Qt::AlignCenter</set>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <spacer name="horizontalSpacer_6">
+                                <property name="orientation">
+                                 <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                 <size>
+                                  <width>40</width>
+                                  <height>20</height>
+                                 </size>
+                                </property>
+                               </spacer>
+                              </item>
+                             </layout>
+                            </item>
+                            <item>
+                             <layout class="QVBoxLayout" name="verticalLayout_6">
+                              <item>
+                               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                                <item>
+                                 <widget class="QLabel" name="label_8">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>320</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>320</width>
+                                    <height>16777215</height>
+                                   </size>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Nombre predio - #Contador:</string>
+                                  </property>
+                                  <property name="alignment">
+                                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <spacer name="horizontalSpacer_9">
+                                  <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>40</width>
+                                    <height>20</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <layout class="QVBoxLayout" name="verticalLayout_17">
+                                <property name="topMargin">
+                                 <number>30</number>
+                                </property>
+                                <item>
+                                 <widget class="QComboBox" name="combo_contador_gastos">
+                                  <property name="enabled">
+                                   <bool>true</bool>
+                                  </property>
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>450</width>
+                                    <height>40</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>450</width>
+                                    <height>16777215</height>
+                                   </size>
+                                  </property>
+                                  <property name="sizeIncrement">
+                                   <size>
+                                    <width>0</width>
+                                    <height>40</height>
+                                   </size>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="editable">
+                                   <bool>false</bool>
+                                  </property>
+                                  <property name="currentIndex">
+                                   <number>-1</number>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QLabel" name="label">
+                                  <property name="text">
+                                   <string/>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </item>
+                             </layout>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <spacer name="verticalSpacer_2">
+                            <property name="orientation">
+                             <enum>Qt::Vertical</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>20</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_8">
+                        <item>
+                         <spacer name="horizontalSpacer_2">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="bt_guardar_gasto">
+                          <property name="minimumSize">
+                           <size>
+                            <width>220</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>220</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>14</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
+                          <property name="cursor">
+                           <cursorShape>PointingHandCursor</cursorShape>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Guardar</string>
+                          </property>
+                          <property name="icon">
+                           <iconset resource="../iconos/gastos.qrc">
+                            <normaloff>:/gastos/computadora.png</normaloff>:/gastos/computadora.png</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>45</width>
+                            <height>45</height>
+                           </size>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pagina_editar_gastos">
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QFrame" name="frame_4">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_22">
+                    <item>
+                     <widget class="QFrame" name="frame_6">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_21">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>-20</y>
+                         <width>500</width>
+                         <height>71</height>
+                        </rect>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>500</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>500</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 75 30pt &quot;Segoe UI&quot;;
+
+color: #0074c3;
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Editar gastos</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_12">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_9">
+                        <item>
+                         <spacer name="horizontalSpacer_3">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QTableWidget" name="tabla_editar_gastos">
+                          <property name="minimumSize">
+                           <size>
+                            <width>1001</width>
+                            <height>600</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>1001</width>
+                            <height>600</height>
+                           </size>
+                          </property>
+                          <property name="cursor" stdset="0">
+                           <cursorShape>PointingHandCursor</cursorShape>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QTableWidget {
+    background-color: rgb(255, 255, 255);
+    font: 10pt &quot;Segoe UI&quot;;
+}
+
+QHeaderView::section {
+    background-color: #0074c3;
+    color: rgb(255, 255, 255);
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #0074c3;
+}
+
+QTableWidget::item:focus {
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+}
+
+QTableWidget QLineEdit {
+    color: rgb(255, 255, 255);
+}
+
+QScrollBar:vertical {
+    border: 1px solid #0074c3;
+    background: #0074c3;       /* Cambiado a azul */
+    width: 12px;
+}
+
+QScrollBar::handle:vertical {
+    background: #ffffff;        /* Color del &quot;mango&quot; de la barra de desplazamiento vertical */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: 2px solid #0074c3;
+    color: rgb(0, 0, 0);       /* Color de las flechas de la barra de desplazamiento vertical */
+    background: #ffffff;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #0074c3;
+    background: #0074c3;        /* Cambiado a azul */
+    height: 12px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #ffffff;        /* Color del &quot;mango&quot; de la barra de desplazamiento horizontal */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    border: 2px solid #0074c3;
+    color: rgb(0, 0, 0);       /* Color de las flechas de la barra de desplazamiento horizontal */
+    background: #ffffff;
+}
+</string>
+                          </property>
+                          <attribute name="horizontalHeaderDefaultSectionSize">
+                           <number>200</number>
+                          </attribute>
+                          <column>
+                           <property name="text">
+                            <string>Id gastos</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Fecha</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Monto</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Descripción</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Contador</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_4">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QVBoxLayout" name="verticalLayout_11">
+                        <item>
+                         <spacer name="verticalSpacer_6">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_13">
+                          <property name="topMargin">
+                           <number>20</number>
+                          </property>
+                          <item>
+                           <spacer name="horizontalSpacer_19">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="bt_actualizar_gastos">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Actualizar tabla</string>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>45</width>
+                              <height>45</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_24">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="bt_guardar_gastos">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Guardar datos</string>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>45</width>
+                              <height>45</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_21">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pagina_eliminar_gastos">
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_16">
+                    <item>
+                     <widget class="QFrame" name="frame_7">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_11">
+                       <property name="geometry">
+                        <rect>
+                         <x>-20</x>
+                         <y>-20</y>
+                         <width>350</width>
+                         <height>71</height>
+                        </rect>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>350</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>350</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 75 30pt &quot;Segoe UI&quot;;
+
+color: #0074c3;
+</string>
+                       </property>
+                       <property name="text">
+                        <string>Eliminar gasto</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_14">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_11">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_10">
+                          <property name="bottomMargin">
+                           <number>10</number>
+                          </property>
+                          <item>
+                           <layout class="QVBoxLayout" name="verticalLayout_15">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>20</number>
+                            </property>
+                            <item>
+                             <widget class="QLabel" name="label_19">
+                              <property name="minimumSize">
+                               <size>
+                                <width>350</width>
+                                <height>50</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>350</width>
+                                <height>50</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">font: 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                              </property>
+                              <property name="text">
+                               <string>Ingrese el id del gasto:</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLineEdit" name="txt_id_eliminar_gasto">
+                              <property name="maximumSize">
+                               <size>
+                                <width>400</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="sizeIncrement">
+                               <size>
+                                <width>400</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">color: rgb(0, 0, 0);
+font: 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="bt_borrar_gasto">
+                            <property name="minimumSize">
+                             <size>
+                              <width>220</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>220</width>
+                              <height>50</height>
+                             </size>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <family>Segoe UI</family>
+                              <pointsize>14</pointsize>
+                              <weight>50</weight>
+                              <italic>false</italic>
+                              <bold>false</bold>
+                             </font>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Eliminar gasto</string>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>45</width>
+                              <height>45</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_12">
+                          <item>
+                           <spacer name="horizontalSpacer_11">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="bt_actualizar_tabla">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>55</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+    background-color: #0074c3;  /* Color de fondo */
+    color: rgb(255, 255, 255);
+    border: 1px solid #0074c3;  /* Borde del botón */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0063a5; 
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Actualizar tabla</string>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>45</width>
+                              <height>45</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_10">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_15">
+                        <property name="topMargin">
+                         <number>10</number>
+                        </property>
+                        <item>
+                         <spacer name="horizontalSpacer_12">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QTableWidget" name="tabla_eliminar_gastos">
+                          <property name="minimumSize">
+                           <size>
+                            <width>1002</width>
+                            <height>600</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>1001</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="cursor" stdset="0">
+                           <cursorShape>PointingHandCursor</cursorShape>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QTableWidget {
+    background-color: rgb(255, 255, 255);
+    font: 10pt &quot;Segoe UI&quot;;
+}
+
+QHeaderView::section {
+    background-color: #0074c3;
+    color: rgb(255, 255, 255);
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #0074c3;
+}
+
+QTableWidget::item:focus {
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+}
+
+QTableWidget QLineEdit {
+    color: rgb(255, 255, 255);
+}
+
+QScrollBar:vertical {
+    border: 1px solid #0074c3;
+    background: #0074c3;       /* Cambiado a azul */
+    width: 12px;
+}
+
+QScrollBar::handle:vertical {
+    background: #ffffff;        /* Color del &quot;mango&quot; de la barra de desplazamiento vertical */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: 2px solid #0074c3;
+    color: rgb(0, 0, 0);       /* Color de las flechas de la barra de desplazamiento vertical */
+    background: #ffffff;
+}
+
+QScrollBar:horizontal {
+    border: 1px solid #0074c3;
+    background: #0074c3;        /* Cambiado a azul */
+    height: 12px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #ffffff;        /* Color del &quot;mango&quot; de la barra de desplazamiento horizontal */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    border: 2px solid #0074c3;
+    color: rgb(0, 0, 0);       /* Color de las flechas de la barra de desplazamiento horizontal */
+    background: #ffffff;
+}
+</string>
+                          </property>
+                          <attribute name="horizontalHeaderDefaultSectionSize">
+                           <number>200</number>
+                          </attribute>
+                          <column>
+                           <property name="text">
+                            <string>Id gastos</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Monto</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Descripción</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Contador</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>fecha</string>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_13">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_inferior">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QPushButton" name="bt_regresar">
+            <property name="minimumSize">
+             <size>
+              <width>220</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>220</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton {
+     /* Color de fondo */
+    color: rgb(255, 255, 255);
+    
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 15px;  /* Bordes redondeados */
+	font: 14pt &quot;Segoe UI&quot;;
+}
+
+QPushButton:hover{
+  font: 14pt &quot;Segoe UI&quot;;
+  background-color: #0074c3;
+}</string>
+            </property>
+            <property name="text">
+             <string> Regresar</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../iconos/usuarios.qrc">
+              <normaloff>:/usuarios/casa.png</normaloff>:/usuarios/casa.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>645</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="creditsLabel">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>19</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>© 2023 Sebastián Montoya - John Goyeneche - Fabián Romero / Unisangil </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../iconos/recibos.qrc"/>
+  <include location="../iconos/usuarios.qrc"/>
+  <include location="../iconos/gastos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

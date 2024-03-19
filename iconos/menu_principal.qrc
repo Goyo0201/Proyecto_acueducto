@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="menu_principal">
+    <file>usuario (2).png</file>
+    <file>icon_restore.png</file>
+    <file>cil-window-minimize.png</file>
+    <file>cil-x.png</file>
+    <file>icon_maximize.png</file>
+    <file>cerrar-sesion.png</file>
+    <file>gastos.png</file>
+    <file>oficios.png</file>
+    <file>puntos_agua.png</file>
+    <file>recibo.png</file>
+  </qresource>
+</RCC>
